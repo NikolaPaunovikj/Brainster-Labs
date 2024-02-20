@@ -1,0 +1,181 @@
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.offcanvas {
+  width: 100vw!important;
+}
+
+.navbar-brand img {
+  width: 60px;
+}
+
+.offcanvas.show {
+  background-color: rgb(65, 65, 65);
+}
+
+.offcanvas.showing {
+  background-color: rgb(65, 65, 65);
+}
+
+.offcanvas.showing ul li a {
+  color: rgb(255, 255, 255);
+}
+
+.offcanvas.show ul li a {
+  color: rgb(255, 255, 255);
+}
+
+.offcanvas ul li a {
+  color: rgb(0, 0, 0);
+}
+
+ .offcanvas.offcanvas-end {
+  border: none;
+} 
+
+.top {
+  width: 40px;
+  height: 5px;
+}
+
+.middle {
+  width: 30px;
+  height: 5px;
+}
+
+.bottom {
+  width: 20px;
+  height: 5px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+/* BANNER SECTION */
+.banner-section-image-container {
+/* Pricinata za overflow:hidden e poradi toa shto 
+pri loadiranje na banner slikata tekstot 'Brainster 
+Labs' se pojavuva do navbarot */
+  overflow: hidden;
+}
+
+.banner-section-image-container::before {
+  background-color: rgba(5, 5, 5, 0.5);
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.banner-section-image-container img {
+  max-height: 600px;
+   object-fit: cover;
+}
+
+.banner-text {
+  font-size: 50px;
+}
+
+/* CARDS SECTION */
+.card {
+  overflow: hidden;
+  border: none;
+}
+
+.card img {
+  /* SITE SLIKI VO CARDS SEKCIJATA DA BIDAT SO ISTA DIMENZIJA */
+  aspect-ratio: 1/0.6;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(1.04);
+  transition: 0.6s;
+}
+
+.border-class {
+  border-left: 1px solid rgb(58, 58, 58);
+  border-right: 1px solid rgb(58, 58, 58);
+}
+
+@media (max-width:767px){
+  .border-class {
+    border-top: 1px solid rgb(58, 58, 58);
+    border-bottom: 1px solid rgb(58, 58, 58);
+    border-left: none;
+    border-right: none;
+  }
+}
+
+@media (min-width:425px){
+  .show-more-button {
+    display: none;
+  }
+}
+
+/* FORM PAGE */
+
+.height {
+  height: 100vh;
+}
+
+.form-heading {
+  font-size: 40px;
+}
+
+::placeholder {
+  font-style: italic;
+}
+
+  small {
+    visibility: hidden;
+  }
+
+  .error {
+    border: solid 2px red;
+  }
+
+  .success {
+    border: solid 2px green;
+  }
+
+  .showError {
+    visibility: visible;
+    color: red;
+  }
+
+  .showSuccess {
+    visibility: hidden;
+  }
+  
+  .form-heading {
+    font-weight: 700;
+  }
+  @media (max-width:575px){
+    .submit-button {
+      margin-top: 155px;
+    }
+    ::placeholder {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width:994px){
+    ::placeholder {
+      font-size: 12px;
+    }
+  }
+
+
+  
+
+
+

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- BOOTSTRAP CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- LOCAL MAIN CSS-->
+    <link rel="stylesheet" href="./main.css" />
+    <!-- BOOTSTRAP ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <script src="https://kit.fontawesome.com/4eb4fe2df7.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="bg-warning height">
+    <div class="container-fluid px-0 h-100 d-flex flex-column">
+      <nav class="navbar navbar-expand-md bg-warning mb-2 mb-sm-5 shadow">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img class="ms-lg-5 d-flex" src="./images/logo.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="hamburger-menu d-flex flex-column align-items-end">
+              <div class="top bg-black rounded"></div>
+              <div class="middle my-1 bg-black rounded"></div>
+              <div class="bottom bg-black rounded"></div>
+            </span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header justify-content-end">
+              <button
+                type="button"
+                class="btn text-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                <i class="fa-solid fa-xmark fa-2xl"></i>
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav fw-bold pe-3 text-lg-center text-md-center align-items-md-center m-auto"
+              >
+                <li class="nav-item d-flex ms-md-auto">
+                  <a
+                    class="nav-link"
+                    target="_blank"
+                    aria-current="page"
+                    href="https://brainster.co/marketing/"
+                    >Академија за маркетинг</a
+                  >
+                </li>
+                <li class="nav-item mx-md-2 my-4 my-md-0">
+                  <a class="nav-link" target="_blank" href="https://brainster.co/front-end/"
+                    >Академија за програмирање</a
+                  >
+                </li>
+                <li class="nav-item me-md-2">
+                  <a class="nav-link" target="_blank" href="https://brainster.co/data-science/"
+                    >Академија за data science</a
+                  >
+                </li>
+                <li class="nav-item my-4 my-md-0">
+                  <a class="nav-link" target="_blank" href="https://brainster.co/graphic-design/"
+                    >Академија за дизајн</a
+                  >
+                </li>
+              </ul>
+              <a class="btn btn-danger fw-bold text-white me-lg-5" href="#">Вработи наш студент</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- FORM SECTION -->
+      <h1 class="form-heading text-center form-heading my-5">Вработи студенти</h1>
+      <div class="container-fluid p-0 d-flex flex-column justify-content-between h-75">
+        <form class="py-0 mt-0 mt-sm-5" novalidate id="form" action="">
+          <div class="col-12 col-md-9 d-flex justify-content-center mx-auto">
+            <div class="row w-100 justify-content-center">
+              <div class="col-12 col-sm-6 formcontrol">
+                <label for="inputName" class="form-label fw-bold m-0">Име и презиме</label>
+                <input
+                  placeholder="Вашето име и презиме"
+                  type="text"
+                  class="shadow form-control py-3"
+                  id="inputName"
+                  aria-describedby="nameHelp"
+                />
+                <small class="smallError">Error Message</small>
+              </div>
+              <div class="col-12 col-sm-6 formcontrol">
+                <label for="inputCompanyName" class="form-label fw-bold m-0"
+                  >Име на компанија</label
+                >
+                <input
+                  placeholder="Име на вашата компанија"
+                  type="text"
+                  class="shadow form-control py-3"
+                  id="inputCompanyName"
+                  aria-describedby="companyNameHelp"
+                />
+                <small class="error-message">Error Message</small>
+              </div>
+              <div class="col-12 col-sm-6">
+                <label for="inputCompanyEmail" class="form-label fw-bold m-0">Контакт имејл</label>
+                <input
+                  placeholder="Контакт имејл на вашата компанија"
+                  type="email"
+                  class="shadow form-control py-3"
+                  id="inputCompanyEmail"
+                  aria-describedby="companyEmailHelp"
+                />
+                <small class="error-message">Error Message</small>
+              </div>
+              <div class="col-12 col-sm-6">
+                <label for="inputCompanyPhone" class="form-label fw-bold m-0"
+                  >Контакт телефон</label
+                >
+                <input
+                  placeholder="Контакт телефон на вашата компанија"
+                  type="number"
+                  class="shadow form-control py-3"
+                  id="inputCompanyPhone"
+                  aria-describedby="companyPhoneHelp"
+                />
+                <small class="error-message">Error Message</small>
+              </div>
+
+              <label for="select" class="form-label fw-bold">Тип на студенти</label>
+              <div class="col-12 col-sm-6">
+                <div class="dropdown h-100">
+                  <button
+                    class="shadow form-control py-3 d-flex align-items-center justify-content-between dropdown-toggle"
+                    type="button"
+                    value=""
+                    id="select"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span class="fw-bold">Изберете тип на студент</span>
+                  </button>
+                  <ul
+                    id="menu"
+                    class="dropdown-menu w-100 p-0"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li id="item1" value="1">
+                      <p class="dropdown-item my-0 p-2 border-bottom fw-bold">
+                        Студенти од маркетинг
+                      </p>
+                    </li>
+                    <li value="2" id="item2">
+                      <p class="dropdown-item my-0 p-2 border-bottom fw-bold">
+                        Студенти од програмирање
+                      </p>
+                    </li>
+                    <li value="3" id="item3">
+                      <p class="dropdown-item my-0 p-2 border-bottom fw-bold">
+                        Студенти од data science
+                      </p>
+                    </li>
+                    <li value="4" id="item4">
+                      <p class="dropdown-item my-0 p-2 border-bottom fw-bold">Студенти од дизајн</p>
+                    </li>
+                  </ul>
+                </div>
+
+                <small class="error-message">Error Message</small>
+              </div>
+              <div class="col-12 col-sm-6 mb-5 mb-sm-0 submit-button">
+                <button type="submit" class="shadow py-3 btn form-control btn-danger">
+                  Испрати
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="container-fluid">
+          <div class="row bg-dark mt-5 mt-sm-0">
+            <div class="col text-white text-center">
+              <p class="m-0 p-2">
+                Изработено со <span class="text-danger">&hearts;</span> од студентите на Brainster
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- POPPER JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./form.js"></script>
+  </body>
+</html>
