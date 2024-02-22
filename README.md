@@ -2,7 +2,9 @@
 
 ## Description
 
-Brainster Labs is a project which will contain all of the project made by our students from our different academies.
+Brainster Labs is a project which 
+![Brainster_Labs](https://github.com/NikolaPaunovikj/Brainster-Labs/assets/131998311/b24824ed-b276-4564-9e38-058aaca49df1)
+ill contain all of the project made by our students from our different academies.
 The project will contain projects from the following accademies:
 
 1. Marketing academy
